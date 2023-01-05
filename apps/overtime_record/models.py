@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-from apps.collaborator.models import Collaborator
+from apps.collaborators.models import Collaborator
 
 
 class OvertimeRecord(models.Model):

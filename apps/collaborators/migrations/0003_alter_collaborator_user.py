@@ -9,12 +9,12 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('collaborator', '0002_collaborator_departments_collaborator_enterprise_and_more'),
+        ('collaborators', '0002_collaborator_departments_collaborator_enterprise_and_more'),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='collaborator',
+            model_name='collaborators',
             name='user',
             field=models.OneToOneField(on_delete=django.db.models.deletion.PROTECT, to=settings.AUTH_USER_MODEL),
         ),

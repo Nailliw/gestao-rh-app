@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('collaborator', '0002_collaborator_departments_collaborator_enterprise_and_more'),
+        ('collaborators', '0002_collaborator_departments_collaborator_enterprise_and_more'),
         ('overtime_record', '0001_initial'),
     ]
 
@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='overtimerecord',
             name='owner',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='collaborator.collaborator'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='collaborators.collaborators'),
             preserve_default=False,
         ),
     ]

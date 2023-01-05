@@ -11,23 +11,23 @@ class Migration(migrations.Migration):
         ('departments', '0001_initial'),
         ('enterprises', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('collaborator', '0001_initial'),
+        ('collaborators', '0001_initial'),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='collaborator',
+            model_name='collaborators',
             name='departments',
             field=models.ManyToManyField(to='departments.department'),
         ),
         migrations.AddField(
-            model_name='collaborator',
+            model_name='collaborators',
             name='enterprise',
             field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='enterprises.enterprise'),
             preserve_default=False,
         ),
         migrations.AddField(
-            model_name='collaborator',
+            model_name='collaborators',
             name='user',
             field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to=settings.AUTH_USER_MODEL),
             preserve_default=False,

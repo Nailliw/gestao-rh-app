@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('collaborator', '0003_alter_collaborator_user'),
+        ('collaborators', '0003_alter_collaborator_user'),
         ('documents', '0002_document_owner'),
     ]
 
@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='document',
             name='owner',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='collaborator.collaborator'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.PROTECT, to='collaborators.collaborators'),
             preserve_default=False,
         ),
     ]
