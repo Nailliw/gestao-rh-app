@@ -13,9 +13,8 @@
 /inspectionProfiles/profiles_settings.xml
 /vcs.xml
 /gestao-rh/db.sqlite3
-/gestao_rh/db.sqlite3
-
-D:\Personal Work\gestao-rh\db.sqlite3
+/rh_manager/db.sqlite3
+/venv
 db.sqlite3
 /gestao-rh.iml
 
